@@ -1,0 +1,21 @@
+{
+  "name": "leonardo",
+  "main": "leonardo.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/AF83/leonardo",
+  "authors": [
+    "chpill <etienne.spillemaeker@af83.com>",
+    "lovasoa <ophir.lojkine@eleves.ec-nantes.fr>"
+  ],
+  "keywords": [
+    "image", "filter", "photo"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
