@@ -20,6 +20,23 @@ var image = document.getElementById('my-image');
 var filteredCanvas = leonardo.applyFilter(image, 'greyscale');
 image.src = filteredCanvas.toDataURL();
 ```
+### In node
+```javascript
+var Canvas = require('canvas'),
+    Image  = Canvas.Image,
+    leonardo = require('../leonardo.js'),
+    fs = require('fs');
+
+fs.readFile("~/Pictures/marilyn.jpg", function (err, imgbuff) {
+  var img = new Image();
+  img.src = imgbuff;
+  img.onload = function() {
+      var filtered = leonardo.applyFilter(img, "vivid");
+      var out = fs.createWriteStream("marilyn-vivid.jpg");
+      filtered.jpegStream().pipe(out);
+  };
+});
+```
 
 ## Dependencies
 ### In the browser

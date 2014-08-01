@@ -1,6 +1,6 @@
 {
   "name": "leonardo",
-  "version": "0.0.1-readme",
+  "version": "0.0.2",
   "description": "Photo filter library",
   "main": "leonardo.js",
   "scripts": {
@@ -21,5 +21,12 @@
   "bugs": {
     "url": "https://github.com/AF83/leonardo/issues"
   },
-  "homepage": "https://github.com/AF83/leonardo"
+  "homepage": "https://github.com/AF83/leonardo",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "canvas": "^1.1.5"
+  },
+  "devDependencies": {}
 }

@@ -3,9 +3,15 @@
 
     createCanvas: function createCanvas(width, height) {
       var canvas;
-      canvas = document.createElement('canvas');
-      canvas.width = width;
-      canvas.height = height;
+      if (typeof document !== "undefined") {
+        canvas = document.createElement('canvas');
+        canvas.width = width;
+        canvas.height = height;
+      } else if (typeof Canvas !== 'undefined') {
+         canvas = new Canvas(width, height);
+      } else {
+        throw "No canvas implementation vailable";
+      }
       return canvas;
     },
 
@@ -100,8 +106,12 @@
     ]
   };
 
+  // In the browser
   if (typeof window !== "undefined") window['leonardo'] = leonardo;
-  if (typeof module !== "undefined") module.exports = leonardo;
-
+  // In node
+  if (typeof module !== "undefined") {
+    var Canvas = require('canvas');
+    module.exports = leonardo;
+  }
 })();
 
