@@ -7,7 +7,7 @@
       canvas.width = width;
       canvas.height = height;
       return canvas;
-    }
+    },
 
     "applyFilter": function(image, filterName) {
       var ctx, cv, filter, filtered, fun, imageData;
