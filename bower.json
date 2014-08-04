@@ -1,7 +1,7 @@
 {
   "name": "leonardo",
   "main": "leonardo.js",
-  "version": "0.0.2",
+  "version": "0.0.3-stable",
   "homepage": "https://github.com/AF83/leonardo",
   "authors": [
     "chpill <etienne.spillemaeker@af83.com>",

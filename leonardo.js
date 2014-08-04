@@ -59,6 +59,7 @@
     },
 
     functions: {
+      /*// Unstable Andy Warhol popart
       popart: function(pixels) {
         var i, j, q, x, y,
             d = pixels.data,
@@ -77,6 +78,7 @@
         }
         return pixels;
       }
+      */
     },
 
     filters: [
@@ -90,9 +92,9 @@
         matrix: [[.393, .769, .189, 0, 0],
                  [.349, .686, .168, 0, 0],
                  [.272, .534, .131, 0, 0]]
-      }, {
+      },/* {
         name: "popart"
-      }, {
+      }, */{
         name: "vivid",
         matrix: [[ 1.2, -.1, -.1, 0, 0],
                  [-0.1, 1.2, -.1, 0, 0],
