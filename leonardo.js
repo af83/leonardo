@@ -108,12 +108,14 @@
     ]
   };
 
-  // In the browser
-  if (typeof window !== "undefined") window['leonardo'] = leonardo;
   // In node
   if (typeof module !== "undefined") {
-    var Canvas = require('canvas');
+    var Canvas = require('canvas'); // you must ignore canvas when using browsery
     module.exports = leonardo;
+  } else {
+    // In the browser
+    if (typeof window !== "undefined") window['leonardo'] = leonardo;
   }
+
 })();
 
