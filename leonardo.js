@@ -110,7 +110,6 @@
 
   // In node
   if (typeof module !== "undefined") {
-    var Canvas = require('canvas'); // you must ignore canvas when using browsery
     module.exports = leonardo;
   } else {
     // In the browser
